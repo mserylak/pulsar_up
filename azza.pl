@@ -209,14 +209,14 @@ printf ("UTC: %s\n", &time2str($UTC));
 printf ("LST: %s\n", &time2str($LST));
 $hapres = $HA / $rad / 15.; 
 $hapres_label = "h";
-if (abs($hapres) < 1) { 
- $hapres *= 60.; 
- $hapres_label = "min"; 
- if (abs($hapres) < 1) {
-  $hapres *= 60.; 
-  $hapres_label = "sec"; 
- }
-}
+#if (abs($hapres) < 1) { 
+# $hapres *= 60.; 
+# $hapres_label = "min"; 
+# if (abs($hapres) < 1) {
+#  $hapres *= 60.; 
+#  $hapres_label = "sec"; 
+# }
+#}
 printf ("HA = %.2f %s\n", $hapres, $hapres_label);
 print "EL = $EL deg (ZA = $ZA deg)\n";
 print "AZ = $AZ deg\n";
@@ -230,17 +230,17 @@ sub help {
  print "$prg: calculates AZ, EL(ZA), HA  for a given source and time at given observatory\n";
  print "Usage: $prg [options]\n";
  print "        -t   TIME   - UTC time in format \"DD.MM.YYYY hh:mm:ss.sss\" or \"YYYY-MM-DDThh:mm:ss.sss\"\n";
- print "                      if no time is pointed than current UTC time will be used\n";
- print "        -ra  RA     - right assention of the source where RA is in \"hh:mm:ss.sss\"\n";
- print "        -dec DEC    - declination of the source where DEC is in \"[+\-]dd:mm:ss.sss\"\n";
- print "        -lat PHI    - latitude in degrees (default - FR606)\n";
- print "        -lon LAMBDA - longitude in degrees (default - FR606)\n";
+ print "                      If no time is pointed than current UTC time will be used.\n";
+ print "        -ra  RA     - Right Ascension of the source, where RA is in \"hh:mm:ss.sss\"\n";
+ print "        -dec DEC    - Declination of the source where DEC is in \"[+\-]dd:mm:ss.sss\"\n";
+ print "        -lat PHI    - Latitude in degrees (default - FR606)\n";
+ print "        -lon LAMBDA - Longitude in degrees (default - FR606)\n";
  print "                      Western longitudes are negative!\n";
  print "        -site NAME  - Use pre-defined observatory. Following are available: \n";
  print "                      GBT, Arecibo, Parkes, Jodrell, Nancay, Effelsberg, HartRAO,\n";
  print "                      WSRT, LOFAR, DE601, DE602, DE603, DE604, DE605, FR606,\n";
  print "                      SE607, UK608, FI609, UTR2, GMRT, KAT7, EMBRACE.\n";
- print "        -h          - print this help\n";
+ print "        -h          - Print this help.\n";
 }
 
 # get current UTC time

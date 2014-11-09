@@ -188,17 +188,17 @@ sub help {
  print "$prg: calculates LST for a given UTC time and given longitude\n";
  print "Usage: $prg [options]\n";
  print "        -t   TIME   - UTC time in format \"DD.MM.YYYY hh:mm:ss.sss\" or \"YYYY-MM-DDThh:mm:ss.sss\"\n";
- print "                      if no time is pointed than current UTC time will be used\n";
- print "        -lon LAMBDA - longitude in degrees\n";
+ print "                      If no time is pointed than current UTC time will be used.\n";
+ print "        -lon LAMBDA - Longitude in degrees\n";
  print "                      Western longitudes are negative!\n";
  print "        -site NAME  - Use pre-defined observatory. Following are available: \n";
  print "                      GBT, Arecibo, Parkes, Jodrell, Nancay, Effelsberg, HartRAO,\n";
  print "                      WSRT, LOFAR, DE601, DE602, DE603, DE604, DE605, FR606,\n";
  print "                      SE607, UK608, FI609, UTR2, GMRT, KAT7, EMBRACE.\n";
- print "        -lst        - input time is LST and it is to be converted to UTC; only works if -t option is used\n";
+ print "        -lst        - Input time is LST and it is to be converted to UTC; only works if -t option is used.\n";
  print "                      Note: if there are two UTC epochs within the same date with the same LST,\n";
- print "                      the earliest one will be given\n";
- print "        -h          - print this help\n";
+ print "                      the earliest one will be given.\n";
+ print "        -h          - Print this help.\n";
 }
 
 # calculates the sidereal time given the JD and longitude

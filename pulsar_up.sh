@@ -34,23 +34,19 @@ elevation=30
 
 help()
 {
-  echo ''
-  echo "pulsar_up.sh - script showing output of sid.pl, azza.pl and azlst.pl"
-  echo ''
+  echo "pulsar_up.sh: combines outputs of sid.pl, azza.pl and azlst.pl"
   echo "Usage: pulsar_up.sh <pulsar_name> <observatory> <elevation> <time>"
-  echo ''
   echo "where:"
   echo "      pulsar_name - B or J name of a pulsar (required argument)"
-  echo "      observatory - observatory name (optional argument, default: $site)"
+  echo "      observatory - Observatory name (optional argument, default: $site)"
   echo "                    Use pre-defined observatory. Following are available:"
   echo "                    GBT, Arecibo, Parkes, Jodrell, Nancay, Effelsberg, HartRAO,"
   echo "                    WSRT, LOFAR, DE601, DE602, DE603, DE604, DE605, FR606,"
   echo "                    SE607, UK608, FI609, UTR2, GMRT, KAT7, EMBRACE."
-  echo "      elevation   - elevation in degrees (optional argument, default: $elevation)"
-  echo "      time        - UTC time to in format YYYY-MM-DDThh:mm:ss.sss, default: now"
+  echo "      elevation   - Elevation in degrees (optional argument, default: $elevation)"
+  echo "      time        - UTC time in format YYYY-MM-DDThh:mm:ss.sss (optional argument, default: now)"
   echo ''
   echo "e.g. pulsar_up.sh B0329+54 $site $elevation"
-  echo ''
   exit
 }
 

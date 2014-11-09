@@ -264,17 +264,17 @@ sub help {
  chomp $prg;
  print "$prg - calculates AZ and LST of rise and set for a given source at given observatory\n";
  print "Usage: $prg [options]\n";
- print "        -el  EL     - elevation in degrees, default = 30 deg\n";
- print "        -ra  RA     - right assention of the source where RA is in \"hh:mm:ss.sss\"\n";
- print "        -dec DEC    - declination of the source where DEC is in \"[+\-]dd:mm:ss.sss\"\n";
- print "        -lat PHI    - latitude in degrees (default - FR606)\n";
- print "        -lon LAMBDA - longitude in degrees (default - FR606)\n";
+ print "        -el  EL     - Elevation in degrees, default = 30 deg\n";
+ print "        -ra  RA     - Right Ascension of the source where RA is in \"hh:mm:ss.sss\"\n";
+ print "        -dec DEC    - Declination of the source where DEC is in \"[+\-]dd:mm:ss.sss\"\n";
+ print "        -lat PHI    - Latitude in degrees (default - FR606).\n";
+ print "        -lon LAMBDA - Longitude in degrees (default - FR606).\n";
  print "                      Western longitudes are negative!\n";
  print "        -site NAME  - Use pre-defined observatory. Following are available: \n";
  print "                      GBT, Arecibo, Parkes, Jodrell, Nancay, Effelsberg, HartRAO,\n";
  print "                      WSRT, LOFAR, DE601, DE602, DE603, DE604, DE605, FR606,\n";
  print "                      SE607, UK608, FI609, UTR2, GMRT, KAT7, EMBRACE.\n";
- print "        -h          - print this help\n";
+ print "        -h          - Print this help.\n";
 }
 
 # unique subroutine to output errors
