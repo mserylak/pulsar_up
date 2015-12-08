@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # Provide collective output of
 # sid.pl, azza.pl and azlst.pl

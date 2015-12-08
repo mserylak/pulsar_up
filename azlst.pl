@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 #
 # script calculates the azimuth and hour angle (and LST)
 # (actually the min and max values of HA and LST)

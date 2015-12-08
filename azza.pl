@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 #
 # script calculates the azimuth and zenith angle (elevation)
 # of the source with pointed RA and DEC for pointed time
