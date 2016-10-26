@@ -1,10 +1,15 @@
 #!/usr/bin/env bash
 #
+# Copyright (C) 2016 by Maciej Serylak
+# Licensed under the Academic Free License version 3.0
+# This program comes with ABSOLUTELY NO WARRANTY.
+# You are free to modify and redistribute this code as long
+# as you do not remove the above attribution and reasonably
+# inform receipients that you have modified the original work.
+#
 # Provide collective output of
 # sid.pl, azza.pl and azlst.pl
 # for a given source, site and elevation.
-#
-# written by Maciej Serylak (c)
 #
 #   882589.650  -4924872.3200    3943729.3480   GBT           38.4331290508204, -79.8398384679332,    823.637373044156
 #  2390490.000  -5564764.0000    1994727.0000   ARECIBO       18.3441417459825, -66.7527926727223,   482.803856249899
@@ -27,10 +32,11 @@
 #  3307865.236   2487350.5410    4836939.7840   UTR2          49.6382040054817,  36.9413500027937,   149.999855332077
 #  1656342.300   5797947.7700    2073243.1600   GMRT          19.0930027830705,  74.0565611576975,   497.000828543678
 #  5109943.1050  2003650.7359   -3239908.3195   KAT7         -30.7213885708783,  21.4105542858234,  1037.99994549342
+#  5109318.8410  2006836.3673   -3238921.7749   MEERKAT      -30.7110555556117   21.4438888892753   1034.99998227134
 #  4323467.9155   166037.9873    4670758.5351   EMBRACE       47.382              2.1993             182.00000000000
 
-site="FR606"
-elevation=30
+site="MeerKAT"
+elevation=15
 
 help()
 {
@@ -42,11 +48,11 @@ help()
   echo "                    Use pre-defined observatory. Following are available:"
   echo "                    GBT, Arecibo, Parkes, Jodrell, Nancay, Effelsberg, HartRAO,"
   echo "                    WSRT, LOFAR, DE601, DE602, DE603, DE604, DE605, FR606,"
-  echo "                    SE607, UK608, FI609, UTR2, GMRT, KAT7, EMBRACE."
+  echo "                    SE607, UK608, FI609, UTR2, GMRT, KAT7, MeerKAT, EMBRACE."
   echo "      elevation   - Elevation in degrees (optional argument, default: $elevation)"
   echo "      time        - UTC time in format YYYY-MM-DDThh:mm:ss.sss (optional argument, default: now)"
   echo ''
-  echo "e.g. pulsar_up.sh B0329+54 $site $elevation"
+  echo "e.g. pulsar_up.sh J0835-4510 $site $elevation"
   exit
 }
 

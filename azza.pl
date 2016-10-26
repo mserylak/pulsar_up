@@ -36,6 +36,7 @@ $phiFI609=69.0710443645768; # FI609
 $phiUTR2=49.6382040054817; # UTR2
 $phiGMRT=19.0930027830705; # GMRT
 $phiKAT7=-30.7213885708783; # KAT7
+$phiMEERKAT=-30.7110555556117; # MeerKAT
 $phiEMBRACE=47.382; # EMBRACE
 
 # Longitude
@@ -60,6 +61,7 @@ $lambdaFI609=20.7610478990429; # FI609
 $lambdaUTR2=36.9413500027937; # UTR2
 $lambdaGMRT=74.0565611576975; # GMRT
 $lambdaKAT7=21.4105542858234; # KAT7
+$lambdaMEERKAT=21.4438888892753 ; # MeerKAT
 $lambdaEMBRACE=2.1993; # EMBRACE
 
 $ra = "";
@@ -151,10 +153,13 @@ if ($site eq "gbt") {
 } elsif ($site eq "embrace") {
  $lambda=$lambdaEMBRACE;
  $phi=$phiEMBRACE;
+} elsif ($site eq "meerkat") {
+ $lambda=$lambdaMEERKAT;
+ $phi=$phiMEERKAT;
 } elsif ($site eq "" and $lambda eq "" and $phi eq "") {
- $lambda=$lambdaFR606;
- $phi=$phiFR606;
- $site="fr606"
+ $lambda=$lambdaMEERKAT;
+ $phi=$phiMEERKAT;
+ $site="meerkat"
 } else {
  &error ("Unknown site!"); 
 }
@@ -239,7 +244,7 @@ sub help {
  print "        -site NAME  - Use pre-defined observatory. Following are available: \n";
  print "                      GBT, Arecibo, Parkes, Jodrell, Nancay, Effelsberg, HartRAO,\n";
  print "                      WSRT, LOFAR, DE601, DE602, DE603, DE604, DE605, FR606,\n";
- print "                      SE607, UK608, FI609, UTR2, GMRT, KAT7, EMBRACE.\n";
+ print "                      SE607, UK608, FI609, UTR2, GMRT, KAT7, MeerKAT, EMBRACE.\n";
  print "        -h          - Print this help.\n";
 }
 

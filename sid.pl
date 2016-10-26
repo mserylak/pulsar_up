@@ -29,6 +29,7 @@ $lambdaFI609=20.7610478990429;
 $lambdaUTR2=36.9413500027937;
 $lambdaGMRT=74.0565611576975;
 $lambdaKAT7=21.4105542858234;
+$lambdaMEERKAT=21.4438888892753;
 $lambdaEMBRACE=2.1993;
 
 $UTC = "";
@@ -91,6 +92,8 @@ if ($site eq "gbt") {
  $lambda=$lambdaGMRT;
 } elsif ($site eq "kat7") {
  $lambda=$lambdaKAT7;
+} elsif ($site eq "meerkat") {
+ $lambda=$lambdaMEERKAT;
 } elsif ($site eq "embrace") {
  $lambda=$lambdaEMBRACE;
 } elsif ($site eq "" and $lambda eq "") {
@@ -194,7 +197,7 @@ sub help {
  print "        -site NAME  - Use pre-defined observatory. Following are available: \n";
  print "                      GBT, Arecibo, Parkes, Jodrell, Nancay, Effelsberg, HartRAO,\n";
  print "                      WSRT, LOFAR, DE601, DE602, DE603, DE604, DE605, FR606,\n";
- print "                      SE607, UK608, FI609, UTR2, GMRT, KAT7, EMBRACE.\n";
+ print "                      SE607, UK608, FI609, UTR2, GMRT, KAT7, MeerKAT, EMBRACE.\n";
  print "        -lst        - Input time is LST and it is to be converted to UTC; only works if -t option is used.\n";
  print "                      Note: if there are two UTC epochs within the same date with the same LST,\n";
  print "                      the earliest one will be given.\n";
