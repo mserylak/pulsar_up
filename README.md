@@ -1,10 +1,11 @@
-Set of Perl scripts:
-jd.pl
-sid.pl
-azza.pl
-azlst.pl
-
-and a Bash wrapper script:
-pulsar_up.sh
-
-which tell where a source of interest is at desired UTC and/or LST time and for desired position of the observer.
+This repository contains a set of Perl scripts written
+by Vlad Kondratiev and modified by Maciej Serylak:
++ jd.pl
++ sid.pl
++ azza.pl
++ azlst.pl
+A Bash wrapper script:
++ pulsar_up.sh
+utilises Perl scripts to aggregate output of a position
+of a source of interest, at desired UTC and/or LST for
+desired position of the observer.
