@@ -206,7 +206,7 @@ sub help {
  print "        -site NAME  - Use pre-defined observatory. Following are available: \n";
  print "                      GBT, Arecibo, Parkes, Jodrell, Nancay, Effelsberg, HartRAO,\n";
  print "                      WSRT, LOFAR, DE601, DE602, DE603, DE604, DE605, FR606,\n";
- print "                      SE607, UK608, FI609, PL610, PL611, PL612, UTR2, GMRT,\n;"
+ print "                      SE607, UK608, FI609, PL610, PL611, PL612, UTR2, GMRT,\n";
  print "                      KAT7, MeerKAT, EMBRACE.\n";
  print "        -lst        - Input time is LST and it is to be converted to UTC; only works if -t option is used.\n";
  print "                      Note: if there are two UTC epochs within the same date with the same LST,\n";
