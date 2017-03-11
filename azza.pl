@@ -150,12 +150,12 @@ if ($site eq "gbt") {
 } elsif ($site eq "kat7") {
  $lambda=$lambdaKAT7;
  $phi=$phiKAT7;
-} elsif ($site eq "embrace") {
- $lambda=$lambdaEMBRACE;
- $phi=$phiEMBRACE;
 } elsif ($site eq "meerkat") {
  $lambda=$lambdaMEERKAT;
  $phi=$phiMEERKAT;
+} elsif ($site eq "embrace") {
+ $lambda=$lambdaEMBRACE;
+ $phi=$phiEMBRACE;
 } elsif ($site eq "" and $lambda eq "" and $phi eq "") {
  $lambda=$lambdaMEERKAT;
  $phi=$phiMEERKAT;
