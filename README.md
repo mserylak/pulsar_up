@@ -4,6 +4,7 @@ by Vlad Kondratiev and modified by Maciej Serylak:
 + sid.pl
 + azza.pl
 + azlst.pl
+
 A Bash wrapper script:
 + pulsar_up.sh
 utilises Perl scripts to aggregate output of a position
