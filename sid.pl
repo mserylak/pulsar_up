@@ -34,6 +34,7 @@ $lambdaGMRT=74.0565611576975;
 $lambdaKAT7=21.4105542858234;
 $lambdaMEERKAT=21.443888889697842;
 $lambdaEMBRACE=2.1993;
+$lambdaMWA=116.6708152634701;
 
 $UTC = "";
 # if 1 then given input time is LST rather than UTC
@@ -105,6 +106,8 @@ if ($site eq "gbt") {
  $lambda=$lambdaMEERKAT;
 } elsif ($site eq "embrace") {
  $lambda=$lambdaEMBRACE;
+} elsif ($site eq "mwa") {
+ $lambda=$lambdaMWA;
 } elsif ($site eq "" and $lambda eq "") {
  $lambda=$lambdaMEERKAT;
  } else {
@@ -207,7 +210,7 @@ sub help {
  print "                      GBT, Arecibo, Parkes, Jodrell, Nancay, Effelsberg, HartRAO,\n";
  print "                      WSRT, LOFAR, DE601, DE602, DE603, DE604, DE605, FR606,\n";
  print "                      SE607, UK608, FI609, PL610, PL611, PL612, UTR2, GMRT,\n";
- print "                      KAT7, MeerKAT, EMBRACE.\n";
+ print "                      KAT7, MeerKAT, EMBRACE, MWA.\n";
  print "        -lst        - Input time is LST and it is to be converted to UTC; only works if -t option is used.\n";
  print "                      Note: if there are two UTC epochs within the same date with the same LST,\n";
  print "                      the earliest one will be given.\n";

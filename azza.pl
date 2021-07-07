@@ -41,6 +41,7 @@ $phiGMRT=19.0930027830705; # GMRT
 $phiKAT7=-30.7213885708783; # KAT7
 $phiMEERKAT=-30.71105555329187; # MeerKAT
 $phiEMBRACE=47.382; # EMBRACE
+$phiMWA=-26.703319373620396; # MWA
 
 # Longitude
 $lambdaGBT=-79.8398384679332; # GBT
@@ -69,6 +70,7 @@ $lambdaGMRT=74.0565611576975; # GMRT
 $lambdaKAT7=21.4105542858234; # KAT7
 $lambdaMEERKAT=21.443888889697842; # MeerKAT
 $lambdaEMBRACE=2.1993; # EMBRACE
+$lambdaMWA=116.67081526347012; # MWA
 
 $ra = "";
 $dec = "";
@@ -171,6 +173,9 @@ if ($site eq "gbt") {
 } elsif ($site eq "embrace") {
  $lambda=$lambdaEMBRACE;
  $phi=$phiEMBRACE;
+} elsif ($site eq "mwa") {
+ $lambda=$lambdaMWA;
+ $phi=$phiMWA;
 } elsif ($site eq "" and $lambda eq "" and $phi eq "") {
  $lambda=$lambdaMEERKAT;
  $phi=$phiMEERKAT;
@@ -260,7 +265,7 @@ sub help {
  print "                      GBT, Arecibo, Parkes, Jodrell, Nancay, Effelsberg, HartRAO,\n";
  print "                      WSRT, LOFAR, DE601, DE602, DE603, DE604, DE605, FR606,\n";
  print "                      SE607, UK608, FI609, PL610, PL611, PL612, UTR2,\n";
- print "                      GMRT, KAT7, MeerKAT, EMBRACE.\n";
+ print "                      GMRT, KAT7, MeerKAT, EMBRACE, MWA.\n";
  print "        -h          - Print this help.\n";
 }
 
