@@ -38,7 +38,8 @@
 # -1601192.000  -5041981.4000    3554871.400    VLA           34.0787512855409 -107.6183895352070   2117.09053677134
 #  1656342.300   5797947.7700    2073243.160    GMRT          19.0930027830705   74.0565611576975    497.000828543678
 # -1602196.600  -5042313.4700    3553971.510    LWA1          34.0688999746259 -107.6276700211350   2126.99664182309
-# -2559454.08    5095372.14     -2849057.18     MWA          -26.7033193736204  116.6708152634701    377.8221373104996
+#                                               SKA1 LOW     -26.60055525       116.4525771          300.00
+#                                               SKA1 MID     -30.712925          21.443803          1053.00
 
 site="MeerKAT"
 elevation=20
@@ -54,7 +55,7 @@ help()
   echo "                    GBT, Arecibo, Parkes, Jodrell, Nancay, Effelsberg, HartRAO,"
   echo "                    WSRT, LOFAR, DE601, DE602, DE603, DE604, DE605, FR606,"
   echo "                    SE607, UK608, FI609, PL610, PL611, PL612, UTR2, GMRT,"
-  echo "                    KAT7, MeerKAT, EMBRACE."
+  echo "                    KAT7, MeerKAT, EMBRACE, SKA1 LOW, SKA1 MID."
   echo "      elevation   - Elevation in degrees (optional argument, default: $elevation)"
   echo "      time        - UTC time in format YYYY-MM-DDThh:mm:ss.sss (optional argument, default: now)"
   echo ''
